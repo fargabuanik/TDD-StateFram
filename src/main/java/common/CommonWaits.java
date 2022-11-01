@@ -1,20 +1,31 @@
 package common;
 
+import java.time.Duration;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import io.netty.handler.timeout.TimeoutException;
+import utils.Configuration;
+import utils.IConstant;
 
 public class CommonWaits {
 
 	WebDriverWait wait;
-	
-	public CommonWaits(WebDriverWait wait) {
-		this.wait = wait;
+	Configuration configuration = new  Configuration();
+
+	public CommonWaits(WebDriver driver) {
+		long waitTime = Long.parseLong(configuration.getProperty(IConstant.IMPLICIT_WAIT));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime ));
 	}
-	public static void waitUntilvisible(WebElement element) {
+	public void waitUntilVisible(WebElement element) {
 		try {
-			wait.until
+			wait.until(ExpectedConditions.visibilityOf(element));
+		}		catch (TimeoutException | NullPointerException e) {
+			e.printStackTrace();
+			Assert.fail();
 		}
-		
-		
+
 	}
 } 

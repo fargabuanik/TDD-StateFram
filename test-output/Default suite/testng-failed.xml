@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="auto.AutoTest">
+      <class name="HomeTest.HomeTest">
         <methods>
+          <include name="autoQuotesTest"/>
           <include name="setUpDriver"/>
-          <include name="aTest"/>
           <include name="closingDriverSession"/>
         </methods>
-      </class> <!-- auto.AutoTest -->
+      </class> <!-- HomeTest.HomeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

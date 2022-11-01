@@ -1,14 +1,20 @@
 package page;
 
-import org.openqa.selenium.WebDriver;  
+import org.openqa.selenium.WebDriver;   
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import common.CommonWaits;
 import static common.CommonActions.*;
 
 public class HomePage {
+	
+	WebDriver driver;
+	CommonWaits waits;
 
 	public HomePage(WebDriver driver) {
+		this.driver = driver;
+		waits = new CommonWaits(driver);
 		PageFactory.initElements(driver, this); 
 	}
 	@FindBy(xpath ="//input[@class='-oneX-textfield__input']")
@@ -18,16 +24,17 @@ public class HomePage {
 	@FindBy(id ="quote-main-zip-btn")
 	WebElement startAQuotElement;
 	@FindBy(id ="nyLegacyCloseLinkId")
-	WebElement continuElement;
+	WebElement continueWebElement;
 
-	public void autoProduct() {  
+	public void autoProduct() {   
 		input(zipCodeElement, "11210");
-		click(autoproductElement);
+		click(autoproductElement); 
 		click(startAQuotElement);
-	
-		if(isPresent(continuElement)) {
-			if(isDisplayed(continuElement)) {
-				click(continuElement);
+		
+	waits.waitUntilVisible(continueWebElement);
+		if(isPresent(continueWebElement)) {
+			if(isDisplayed(continueWebElement)) {
+				click(continueWebElement);
 			}
 		}
 	}

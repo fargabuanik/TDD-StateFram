@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-failed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-RegressionSuite">
+              <span class="suite-name border-failed">RegressionSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionSuite">
+                    <span>testRunner.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="testlist-RegressionSuite">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-RegressionSuite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-RegressionSuite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-RegressionSuite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionSuite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-RegressionSuite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -98,16 +98,16 @@
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content failed suite-RegressionSuite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="auto.AutoTest" hash-for-method="aTest">aTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="auto.AutoTest" hash-for-method="autoQuote">autoQuote</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,8 +118,8 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">auto.AutoTest</span>
@@ -127,21 +127,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="aTest">
-                  </a> <!-- aTest -->
-                  <span class="method-name">aTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;quote-main-zip-btn&quot; class=&quot;-oneX-btn-secondary&quot; type=&quot;submit&quot;&gt; is not clickable at point (429,487) because another element &lt;span class=&quot;-oneX-formatWrapper&quot;&gt; obscures it
+                  <a name="autoQuote">
+                  </a> <!-- autoQuote -->
+                  <span class="method-name">autoQuote</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;dateOfBirth&quot;}
+  (Session info: chrome=107.0.5304.87)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;Fargabs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:14c8:41a6:f467:54b4%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;1.8.0_341&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [bea80a89-c206-4c79-b712-8b3b4e4601dd, clickElement {id=0e61a8cb-4a0b-4179-8e3b-6d0ee95c6e15}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:58511, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 1643, moz:profile: /var/folders/dz/6njryvc96lx..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:58511/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on MAC (bea80a89-c206-4c79-b712-8b3b4e4601dd)] -&gt; id: quote-main-zip-btn]
-Session ID: bea80a89-c206-4c79-b712-8b3b4e4601dd
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+System info: host: &apos;Fargabs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:e5:400:e6dc:856c%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [082bc0631ecf3061d08a7756bfac0491, findElement {using=xpath, value=dateOfBirth}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/dz/6njryvc96lx...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51155/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 082bc0631ecf3061d08a7756bfac0491
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -149,98 +146,70 @@ Session ID: bea80a89-c206-4c79-b712-8b3b4e4601dd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy13.click(Unknown Source)
-	at common.CommonActions.click(CommonActions.java:27)
-	at page.HomePage.autoProduct(HomePage.java:26)
-	at auto.AutoTest.aTest(AutoTest.java:11)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+	at common.CommonActions.input(CommonActions.java:16)
+	at page.AboutYou.aboutYourSteps(AboutYou.java:17)
+	at auto.AutoTest.autoQuote(AutoTest.java:11)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-RegressionSuite-class-failed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/dz/6njryvc96lx77m5kzzch6gqr0000gn/T/testng-eclipse-1990806885/testng-customsuite.xml</span>
+            <span class="header-content">/Users/fargabuddin/eclipse-workspace/TDD.StateFram/testRunner.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;RegressionTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;auto.AutoTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- RegressionTest --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for RegressionSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">RegressionTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for RegressionSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for RegressionSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
@@ -248,41 +217,43 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'aTest')
+data.setCell(0, 1, 'autoQuote')
 data.setCell(0, 2, 'auto.AutoTest')
-data.setCell(0, 3, 471);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 3, 35763);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 471 ms</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for RegressionSuite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">aTest</span>
+              <span class="reporter-method-name">autoQuote</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[[FirefoxDriver: firefox on MAC (bea80a89-c206-4c79-b712-8b3b4e4601dd)] -> xpath: //input[@class='-oneX-textfield__input']]:has been passed to --->[[FirefoxDriver: firefox on MAC (bea80a89-c206-4c79-b712-8b3b4e4601dd)] -> xpath: //input[@class='-oneX-textfield__input']]<br></span>
-                <span class="reporter-method-output">[[FirefoxDriver: firefox on MAC (bea80a89-c206-4c79-b712-8b3b4e4601dd)] -> name: productName]:has been click --->[[FirefoxDriver: firefox on MAC (bea80a89-c206-4c79-b712-8b3b4e4601dd)] -> name: productName]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]:has been passed to --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]<br></span>
+                <span class="reporter-method-output">[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]<br></span>
+                <span class="reporter-method-output">Continue<--- has been present<br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-RegressionSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -296,12 +267,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">aTest</span>
-                <span class="method-start">7008 ms</span>
+                <span class="method-name">autoQuote</span>
+                <span class="method-start">27050 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closingDriverSession</span>
-                <span class="method-start">7512 ms</span>
+                <span class="method-start">62836 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
