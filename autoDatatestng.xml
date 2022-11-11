@@ -3,8 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="HomeTest.HomeTest"/>
-      <class name="auto.AutoTest"/>
       <class name="auto.AutoTest_with_AutoData"/>
     </classes>
   </test> <!-- Test -->

@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]">
-  <test thread-count="5" name="RegressionTest(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="home"/>
+        <exclude name="priority"/>
+      </run>
+    </groups>
     <classes>
-      <class name="auto.AutoTest">
+      <class name="HomeTest.HomeTest">
         <methods>
-          <include name="setUpDriver"/>
-          <include name="autoQuote"/>
-          <include name="closingDriverSession"/>
+          <include name="homeQuote4"/>
         </methods>
-      </class> <!-- auto.AutoTest -->
+      </class> <!-- HomeTest.HomeTest -->
     </classes>
-  </test> <!-- RegressionTest(failed) -->
-</suite> <!-- Failed suite [RegressionSuite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

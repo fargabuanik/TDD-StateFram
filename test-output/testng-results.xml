@@ -1,72 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="3" total="6" passed="2">
   <reporter-output>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]:has been passed to --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]<br>]]>
+      <![CDATA[No priority5<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]<br>]]>
+      <![CDATA[This is nopriority3<br>]]>
     </line>
     <line>
-      <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]<br>]]>
+      <![CDATA[This is priority4<br>]]>
     </line>
     <line>
-      <![CDATA[Continue<--- has been present<br>]]>
+      <![CDATA[Retrying2<br>]]>
     </line>
   </reporter-output>
-  <suite name="RegressionSuite" duration-ms="62993" started-at="2022-11-01T16:07:51 EDT" finished-at="2022-11-01T16:08:54 EDT">
+  <suite name="Suite" duration-ms="106" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
     <groups>
+      <group name="nopriority">
+        <method signature="HomeTest.homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" class="HomeTest.HomeTest"/>
+      </group> <!-- nopriority -->
+      <group name="home">
+        <method signature="HomeTest.homeQuote4()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote4" class="HomeTest.HomeTest"/>
+        <method signature="HomeTest.homeQuote5()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote5" class="HomeTest.HomeTest"/>
+        <method signature="HomeTest.homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" class="HomeTest.HomeTest"/>
+      </group> <!-- home -->
     </groups>
-    <test name="RegressionTest" duration-ms="62993" started-at="2022-11-01T16:07:51 EDT" finished-at="2022-11-01T16:08:54 EDT">
-      <class name="auto.AutoTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:auto.AutoTest@1990a65e]" name="setUpDriver" is-config="true" duration-ms="27048" started-at="2022-11-01T16:07:51 EDT" finished-at="2022-11-01T16:08:18 EDT">
+    <test name="Test" duration-ms="106" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+      <class name="HomeTest.HomeTest">
+        <test-method status="PASS" signature="homeQuote5()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote5" duration-ms="34" depends-on-groups="homeQuote" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
           <reporter-output>
+            <line>
+              <![CDATA[No priority5<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method status="FAIL" signature="autoQuote()[pri:0, instance:auto.AutoTest@1990a65e]" name="autoQuote" duration-ms="35763" started-at="2022-11-01T16:08:18 EDT" finished-at="2022-11-01T16:08:54 EDT">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- homeQuote5 -->
+        <test-method status="PASS" signature="homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" duration-ms="4" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+          <reporter-output>
+            <line>
+              <![CDATA[This is nopriority3<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- homeQuote3 -->
+        <test-method status="FAIL" signature="homeQuote4()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote4" duration-ms="4" depends-on-groups="home" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"dateOfBirth"}
-  (Session info: chrome=107.0.5304.87)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'Fargabs-MacBook-Pro.local', ip: 'fe80:0:0:0:e5:400:e6dc:856c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [082bc0631ecf3061d08a7756bfac0491, findElement {using=xpath, value=dateOfBirth}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/dz/6njryvc96lx...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51155/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 082bc0631ecf3061d08a7756bfac0491]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"dateOfBirth"}
-  (Session info: chrome=107.0.5304.87)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'Fargabs-MacBook-Pro.local', ip: 'fe80:0:0:0:e5:400:e6dc:856c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6', java.version: '1.8.0_341'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [082bc0631ecf3061d08a7756bfac0491, findElement {using=xpath, value=dateOfBirth}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.87, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/dz/6njryvc96lx...}, goog:chromeOptions: {debuggerAddress: localhost:51155}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51155/devtoo..., se:cdpVersion: 107.0.5304.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 082bc0631ecf3061d08a7756bfac0491
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
-at common.CommonActions.input(CommonActions.java:16)
-at page.AboutYou.aboutYourSteps(AboutYou.java:17)
-at auto.AutoTest.autoQuote(AutoTest.java:11)
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at HomeTest.HomeTest.homeQuote4(HomeTest.java:28)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -97,27 +81,17 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]:has been passed to --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> xpath: //input[@class='-oneX-textfield__input']]<br>]]>
+              <![CDATA[This is priority4<br>]]>
             </line>
             <line>
-              <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> name: productName]<br>]]>
-            </line>
-            <line>
-              <![CDATA[[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (082bc0631ecf3061d08a7756bfac0491)] -> id: quote-main-zip-btn]<br>]]>
-            </line>
-            <line>
-              <![CDATA[Continue<--- has been present<br>]]>
+              <![CDATA[Retrying2<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- autoQuote -->
-        <test-method status="PASS" signature="closingDriverSession()[pri:0, instance:auto.AutoTest@1990a65e]" name="closingDriverSession" is-config="true" duration-ms="122" started-at="2022-11-01T16:08:54 EDT" finished-at="2022-11-01T16:08:54 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closingDriverSession -->
-      </class> <!-- auto.AutoTest -->
-    </test> <!-- RegressionTest -->
-  </suite> <!-- RegressionSuite -->
+        </test-method> <!-- homeQuote4 -->
+      </class> <!-- HomeTest.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
