@@ -1,10 +1,7 @@
 package auto;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test;
-import org.testng.annotations.Test; 
+
 import baseClass.BaseClass;
 import utils.data.AutoData;
 

@@ -55,15 +55,15 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 10 22:54:01 EST 2022</td>
+<td>Started on:</td><td>Sat Nov 12 22:48:31 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (106 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36677 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>home </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
-<td>Excluded groups:</td><td>priority </td>
+<td>Excluded groups:</td><td></td>
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
@@ -75,23 +75,73 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='HomeTest.HomeTest.homeQuote4()'><b>homeQuote4</b><br>Test class: HomeTest.HomeTest<br/>
-<a href="#Output-660017404" onClick='toggleBox("Output-660017404", this, "Show output", "Hide output");'>Show output</a>
+<td title='HomeTest.RentersQuoteTest.RentersQuote()'><b>RentersQuote</b><br>Test class: HomeTest.RentersQuoteTest<br/>
+<a href="#Output-1791589252" onClick='toggleBox("Output-1791589252", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-660017404" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-660017404">
-This is priority4<br><br/>
-Retrying2<br><br/>
+<a href="#Output-1791589252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1791589252">
+[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> xpath: //input[@id='quote-main-zip-code-input']]:has been passed to --->[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> xpath: //input[@id='quote-main-zip-code-input']]<br><br/>
+[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> xpath: //select[@id='popDropdown']]:has been passed to --->[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> xpath: //select[@id='popDropdown']]<br><br/>
+[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> id: quote-main-zip-btn]<br><br/>
+[[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -> xpath: //div[@class='-oneX-heading--h3']]<-----has Text+Let's start with the address<br><br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: null
-	at HomeTest.HomeTest.homeQuote4(HomeTest.java:28)
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.110)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Fargabs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1ce6:1879:b0f0:92a2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25336e3849a42aa8f7604f13a00d351a, sendKeysToElement {id=d0861e50-98fd-47df-a1bb-09488ed79ca0, value=[Ljava.lang.CharSequence;@466d49f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/dz/6njryvc96lx...}, goog:chromeOptions: {debuggerAddress: localhost:56635}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56635/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -&gt; xpath: //textarea[@id=&apos;insured-address-full-address-id&apos;]]
+Session ID: 25336e3849a42aa8f7604f13a00d351a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+	at common.CommonActions.input(CommonActions.java:21)
+	at pageRenters.AddressPage.AddressPageProduct(AddressPage.java:32)
+	at HomeTest.RentersQuoteTest.RentersQuote(RentersQuoteTest.java:11)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace660017404", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace660017404'><pre>java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.testng.Assert.fail(Assert.java:115)
-	at HomeTest.HomeTest.homeQuote4(HomeTest.java:28)
+... Removed 35 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1791589252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1791589252'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.110)
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;Fargabs-MacBook-Pro.local&apos;, ip: &apos;fe80:0:0:0:1ce6:1879:b0f0:92a2%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;12.6&apos;, java.version: &apos;1.8.0_341&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [25336e3849a42aa8f7604f13a00d351a, sendKeysToElement {id=d0861e50-98fd-47df-a1bb-09488ed79ca0, value=[Ljava.lang.CharSequence;@466d49f0}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.110, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: /var/folders/dz/6njryvc96lx...}, goog:chromeOptions: {debuggerAddress: localhost:56635}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:56635/devtoo..., se:cdpVersion: 107.0.5304.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (25336e3849a42aa8f7604f13a00d351a)] -&gt; xpath: //textarea[@id=&apos;insured-address-full-address-id&apos;]]
+Session ID: 25336e3849a42aa8f7604f13a00d351a
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+	at common.CommonActions.input(CommonActions.java:21)
+	at pageRenters.AddressPage.AddressPageProduct(AddressPage.java:32)
+	at HomeTest.RentersQuoteTest.RentersQuote(RentersQuoteTest.java:11)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,40 +171,8 @@ Retrying2<br><br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>HomeTest.HomeTest@150c158</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='HomeTest.HomeTest.homeQuote5()'><b>homeQuote5</b><br>Test class: HomeTest.HomeTest<br/>
-<a href="#Output-146370526" onClick='toggleBox("Output-146370526", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-146370526" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-146370526">
-No priority5<br><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>HomeTest.HomeTest@150c158</td></tr>
-<tr>
-<td title='HomeTest.HomeTest.homeQuote3()'><b>homeQuote3</b><br>Test class: HomeTest.HomeTest<br/>
-<a href="#Output-921760190" onClick='toggleBox("Output-921760190", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-921760190" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-921760190">
-This is nopriority3<br><br/>
-</div>
-</td>
-<td></td>
-<td>0</td>
-<td>HomeTest.HomeTest@150c158</td></tr>
+<td>11</td>
+<td>HomeTest.RentersQuoteTest@1990a65e</td></tr>
 </table><p>
 </body>
 </html>

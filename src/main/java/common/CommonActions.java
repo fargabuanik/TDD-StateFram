@@ -1,5 +1,7 @@
 package common;
 
+import static org.testng.Assert.*;  
+
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
@@ -78,9 +80,34 @@ public class CommonActions {
 
 		}
 	}
-	public static void scrollByWindo(JavascriptExecutor driver) { 
+	public static void scrollByWindow(JavascriptExecutor driver) { 
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 700)", "");
 		Logs.log("Scrolling down...");
 
 	}
+
+	public static void assertGetText(WebElement element, String expcted) {
+		if (element != null) {
+			Logs.log(element +"<-----has Text+"+ element.getText()); 
+			assertEquals(element.getText(), expcted);
+		}else {
+			Logs.log("Element not found--->" + element ); 
+			fail();
+		}
+
+	}
+	public static void sleep (int secs) {
+		try {
+			Thread.sleep(secs);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+
 }
+
+
+
+
+

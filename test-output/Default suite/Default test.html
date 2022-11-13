@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Nov 10 20:02:35 EST 2022</td>
+<td>Started on:</td><td>Sat Nov 12 23:13:32 EST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>80 seconds (80869 ms)</td>
+<tr><td>Total time:</td><td>72 seconds (72221 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,80 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='auto.AutoTest.autoQuoteParameter()'><b>autoQuoteParameter</b><br>Test class: auto.AutoTest</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos;zipCode&apos; is required by @Test on method autoQuoteParameter but has not been marked @Optional or defined
-in /private/var/folders/dz/6njryvc96lx77m5kzzch6gqr0000gn/T/testng-eclipse--1475699966/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace424226973", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace424226973'><pre>org.testng.TestNGException: 
-Parameter &apos;zipCode&apos; is required by @Test on method autoQuoteParameter but has not been marked @Optional or defined
-in /private/var/folders/dz/6njryvc96lx77m5kzzch6gqr0000gn/T/testng-eclipse--1475699966/testng-customsuite.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:660)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:856)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
-	at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
-	at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.testng.TestRunner.privateRun(TestRunner.java:808)
-	at org.testng.TestRunner.run(TestRunner.java:603)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.runSuites(TestNG.java:1092)
-	at org.testng.TestNG.run(TestNG.java:1060)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>auto.AutoTest@6ec8211c</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -149,25 +75,21 @@ in /private/var/folders/dz/6njryvc96lx77m5kzzch6gqr0000gn/T/testng-eclipse--1475
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='auto.AutoTest.autoQuote()'><b>autoQuote</b><br>Test class: auto.AutoTest<br/>
-<a href="#Output-1360332263" onClick='toggleBox("Output-1360332263", this, "Show output", "Hide output");'>Show output</a>
+<td title='HomeTest.RentersQuoteTest.RentersQuote()'><b>RentersQuote</b><br>Test class: HomeTest.RentersQuoteTest<br/>
+<a href="#Output-922992444" onClick='toggleBox("Output-922992444", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1360332263" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1360332263">
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='quote-main-zip-code-input']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='quote-main-zip-code-input']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //select[@id='popDropdown']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //select[@id='popDropdown']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> id: quote-main-zip-btn]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='firstName']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='firstName']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='lastName']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='lastName']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@name='riskLocationAddress.street']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@name='riskLocationAddress.street']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@name='riskLocationAddress.street2']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@name='riskLocationAddress.street2']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='dateOfBirth']]:has been passed to --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> xpath: //input[@id='dateOfBirth']]<br><br/>
-[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> id: optclosebtn]:has been click --->[[ChromeDriver: chrome on MAC (d8e2c82a41773e2a5de1d9dd0a19dba9)] -> id: optclosebtn]<br><br/>
+<a href="#Output-922992444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-922992444">
+[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]<br><br/>
+[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]<br><br/>
+[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]<br><br/>
+[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //div[@class='-oneX-heading--h3']]<-----has Text+Let's start with the address<br><br/>
+[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]<br><br/>
 </div>
 </td>
 <td></td>
-<td>51</td>
-<td>auto.AutoTest@6ec8211c</td></tr>
+<td>46</td>
+<td>HomeTest.RentersQuoteTest@1990a65e</td></tr>
 </table><p>
 </body>
 </html>

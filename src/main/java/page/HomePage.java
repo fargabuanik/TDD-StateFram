@@ -1,6 +1,6 @@
 package page;
 
-import org.openqa.selenium.WebDriver;     
+import org.openqa.selenium.WebDriver;       
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -23,9 +23,17 @@ public class HomePage {
 	WebElement zipCodeElement;  
 	@FindBy (xpath ="//select[@id='popDropdown']")
 	WebElement homeownersElement;  
+	@FindBy(xpath ="//select[@id='popDropdown']")
+	WebElement rentersElement;
 	@FindBy(id ="quote-main-zip-btn")
 	WebElement startAquoteElement; 
 
+	public void rentersProduct(String zipCode) {
+		input(zipCodeElement, zipCode);
+		selectMethod(rentersElement, "Renters");
+		sleep(2);
+		click(startAquoteElement); 
+	}
 
 	public void autoProduct(String zipCode) {     
 		input(zipCodeElement, zipCode);

@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import page.AboutYou;
 import page.HomePage;
+import pageRenters.AddressPage;
 import utils.Configuration;
 import static utils.IConstant.*;
 import java.time.Duration;
@@ -20,6 +21,8 @@ public class BaseClass {
 	WebDriver driver;
 	protected HomePage homePage;
 	protected AboutYou aboutYou;
+	protected AddressPage addressPage;
+	
 
 	@BeforeMethod
 	public void setUpDriver() {	
@@ -67,6 +70,8 @@ public class BaseClass {
 	private void initClasses() {
 		homePage = new HomePage(driver);
 		aboutYou = new AboutYou(driver);
+		addressPage = new AddressPage(driver);
+		
 	}
 
 	public WebDriver getDriver() {

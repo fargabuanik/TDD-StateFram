@@ -1,97 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="3" total="6" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[No priority5<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]<br>]]>
     </line>
     <line>
-      <![CDATA[This is nopriority3<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]<br>]]>
     </line>
     <line>
-      <![CDATA[This is priority4<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]<br>]]>
     </line>
     <line>
-      <![CDATA[Retrying2<br>]]>
+      <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //div[@class='-oneX-heading--h3']]<-----has Text+Let's start with the address<br>]]>
+    </line>
+    <line>
+      <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]<br>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="106" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+  <suite name="Default suite" duration-ms="72221" started-at="2022-11-12T23:13:32 EST" finished-at="2022-11-12T23:14:44 EST">
     <groups>
-      <group name="nopriority">
-        <method signature="HomeTest.homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" class="HomeTest.HomeTest"/>
-      </group> <!-- nopriority -->
-      <group name="home">
-        <method signature="HomeTest.homeQuote4()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote4" class="HomeTest.HomeTest"/>
-        <method signature="HomeTest.homeQuote5()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote5" class="HomeTest.HomeTest"/>
-        <method signature="HomeTest.homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" class="HomeTest.HomeTest"/>
-      </group> <!-- home -->
     </groups>
-    <test name="Test" duration-ms="106" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
-      <class name="HomeTest.HomeTest">
-        <test-method status="PASS" signature="homeQuote5()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote5" duration-ms="34" depends-on-groups="homeQuote" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+    <test name="Default test" duration-ms="72221" started-at="2022-11-12T23:13:32 EST" finished-at="2022-11-12T23:14:44 EST">
+      <class name="HomeTest.RentersQuoteTest">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:HomeTest.RentersQuoteTest@1990a65e]" name="setUpDriver" is-config="true" duration-ms="25390" started-at="2022-11-12T23:13:32 EST" finished-at="2022-11-12T23:13:57 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="RentersQuote()[pri:0, instance:HomeTest.RentersQuoteTest@1990a65e]" name="RentersQuote" duration-ms="46631" started-at="2022-11-12T23:13:57 EST" finished-at="2022-11-12T23:14:44 EST">
           <reporter-output>
             <line>
-              <![CDATA[No priority5<br>]]>
+              <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //input[@id='quote-main-zip-code-input']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]:has been passed to --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //select[@id='popDropdown']]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> id: quote-main-zip-btn]<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> xpath: //div[@class='-oneX-heading--h3']]<-----has Text+Let's start with the address<br>]]>
+            </line>
+            <line>
+              <![CDATA[[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]:has been click --->[[ChromeDriver: chrome on MAC (648cf220c7f4b69a748cd2c9cb62cc49)] -> class name: px38]<br>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- homeQuote5 -->
-        <test-method status="PASS" signature="homeQuote3()[pri:3, instance:HomeTest.HomeTest@150c158]" name="homeQuote3" duration-ms="4" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
+        </test-method> <!-- RentersQuote -->
+        <test-method status="PASS" signature="closingDriverSession()[pri:0, instance:HomeTest.RentersQuoteTest@1990a65e]" name="closingDriverSession" is-config="true" duration-ms="147" started-at="2022-11-12T23:14:44 EST" finished-at="2022-11-12T23:14:44 EST">
           <reporter-output>
-            <line>
-              <![CDATA[This is nopriority3<br>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- homeQuote3 -->
-        <test-method status="FAIL" signature="homeQuote4()[pri:0, instance:HomeTest.HomeTest@150c158]" name="homeQuote4" duration-ms="4" depends-on-groups="home" started-at="2022-11-10T22:54:01 EST" finished-at="2022-11-10T22:54:01 EST">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:110)
-at org.testng.Assert.fail(Assert.java:115)
-at HomeTest.HomeTest.homeQuote4(HomeTest.java:28)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.ArrayList.forEach(ArrayList.java:1259)
-at org.testng.TestRunner.privateRun(TestRunner.java:808)
-at org.testng.TestRunner.run(TestRunner.java:603)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
-at org.testng.SuiteRunner.run(SuiteRunner.java:326)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-at org.testng.TestNG.runSuites(TestNG.java:1092)
-at org.testng.TestNG.run(TestNG.java:1060)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-            <line>
-              <![CDATA[This is priority4<br>]]>
-            </line>
-            <line>
-              <![CDATA[Retrying2<br>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- homeQuote4 -->
-      </class> <!-- HomeTest.HomeTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- closingDriverSession -->
+      </class> <!-- HomeTest.RentersQuoteTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
