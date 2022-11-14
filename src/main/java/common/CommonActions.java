@@ -1,11 +1,16 @@
 package common;
 
-import java.util.List; 
+import static org.testng.Assert.*;  
+
+import java.util.List;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+
 import reporting.Logs;
 
 public class CommonActions {
@@ -50,7 +55,7 @@ public class CommonActions {
 			Logs.log("ELEMENT NOT FOUND--->" + byLocator);
 			return false;
 		}else {
-			Logs.log(elements.get(0).getAccessibleName()+ "<---hase been present");
+			Logs.log(elements.get(0).getAccessibleName()+ "<---hase been present");	
 			return true;
 		}
 	}
@@ -62,8 +67,47 @@ public class CommonActions {
 			Logs.log(element.getAccessibleName()+"<---- not Visible");
 			return false;
 		}
-		
-	
-		
 	}
+	public static void selectMethod(WebElement element, String value) {
+		try {
+			Select select=new Select(element);
+			select.selectByValue(value);
+			Logs.log(element +":has been passed to --->" + element);
+		} catch ( NoSuchElementException | NullPointerException e) {
+			e.printStackTrace();
+			Logs.log("Element not found--->" + element ); 
+			Assert.fail();
+
+		}
+	}
+	public static void scrollByWindow(JavascriptExecutor driver) { 
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 700)", "");
+		Logs.log("Scrolling down...");
+
+	}
+
+	public static void assertGetText(WebElement element, String expcted) {
+		if (element != null) {
+			Logs.log(element +"<-----has Text+"+ element.getText()); 
+			assertEquals(element.getText(), expcted);
+		}else {
+			Logs.log("Element not found--->" + element ); 
+			fail();
+		}
+
+	}
+	public static void sleep (int secs) {
+		try {
+			Thread.sleep(secs);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+
 }
+
+
+
+
+

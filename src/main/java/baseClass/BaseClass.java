@@ -1,30 +1,37 @@
 package baseClass;
 
-import org.openqa.selenium.WebDriver;   
+import org.openqa.selenium.WebDriver;      
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import AboutYouPage.AboutYourSelf;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import page.AboutYou;
 import page.HomePage;
+import pageRenters.AddressPage;
 import utils.Configuration;
 import static utils.IConstant.*;
 import java.time.Duration;
 
 public class BaseClass {
 	
+	private static final int browser = 0;
 	Configuration config = new Configuration();
 	WebDriver driver;
 	protected HomePage homePage;
 	protected AboutYou aboutYou;
-
+	protected AddressPage addressPage;
+	protected AboutYourSelf aboutYourSelf ;
+	
 
 	@BeforeMethod
 	public void setUpDriver() {	
-		initDriver();
+		String browser = config.getProperty(BROWSER);
+		initDriver(browser);
 		driver.manage().window().maximize();
 		driver.get(config.getProperty((URL))); 
 		long pageLoadTime = Long.parseLong(config.getProperty(PAGELOAD_WAIT));
@@ -34,12 +41,11 @@ public class BaseClass {
 		initClasses();
 	}
 	
-	private void initDriver() { 
-		String browserName = config.getProperty(BROWSER);
-		switch (browserName) {
+	private void initDriver(String browser) { 
+		switch (browser) {
 		
 		case CHROME:
-			WebDriverManager.chromedriver().browserVersion("107.0.5304.62").setup();
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			break;
 	
@@ -68,11 +74,13 @@ public class BaseClass {
 	private void initClasses() {
 		homePage = new HomePage(driver);
 		aboutYou = new AboutYou(driver);
+		addressPage = new AddressPage(driver);
+		aboutYourSelf = new AboutYourSelf (driver);
+		
 	}
 
 	public WebDriver getDriver() {
 		return driver;
-
 	}
 	
 	@AfterMethod

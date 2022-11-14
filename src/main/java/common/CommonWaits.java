@@ -1,6 +1,6 @@
 package common;
 
-import java.time.Duration;
+import java.time.Duration;  
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,7 +12,7 @@ import utils.IConstant;
 
 public class CommonWaits {
 
-	WebDriverWait wait;
+	 WebDriverWait wait;
 	Configuration configuration = new  Configuration();
 
 	public CommonWaits(WebDriver driver) {
@@ -21,11 +21,19 @@ public class CommonWaits {
 	}
 	public void waitUntilVisible(WebElement element) {
 		try {
-			wait.until(ExpectedConditions.visibilityOf(element));
+			wait.until(ExpectedConditions.elementToBeClickable(element));
 		}		catch (TimeoutException | NullPointerException e) {
 			e.printStackTrace();
 			Assert.fail();
 		}
 
+	}	public void waitUntilClickable(WebElement element) {
+		try {
+			wait.until(ExpectedConditions.elementToBeClickable(element));
+		} catch (TimeoutException | NullPointerException e) {
+			e.printStackTrace();
+			Assert.fail();
+		}
 	}
-} 
+}
+
