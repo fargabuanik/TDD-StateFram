@@ -35,7 +35,6 @@ public class AddressPage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='501 E 26st' ", addressElement);
 		waits.waitUntilClickable(addressElement);
-		//input(addressElement, address); 
 		click(continueButtonElement);
 		
 
