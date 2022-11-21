@@ -1,16 +1,13 @@
 package common;
 
-import static org.testng.Assert.*;  
-
+import static org.testng.Assert.*;     
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-
 import reporting.Logs;
 
 public class CommonActions {
@@ -77,13 +74,7 @@ public class CommonActions {
 			e.printStackTrace();
 			Logs.log("Element not found--->" + element ); 
 			Assert.fail();
-
 		}
-	}
-	public static void scrollByWindow(JavascriptExecutor driver) { 
-		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 700)", "");
-		Logs.log("Scrolling down...");
-
 	}
 
 	public static void assertGetText(WebElement element, String expcted) {

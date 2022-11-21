@@ -11,5 +11,4 @@ public class Logs {
 		logger.log(Level.INFO, msg);
 		Reporter.log(msg + "<br>");
 	} 
-
 }

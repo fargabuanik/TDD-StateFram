@@ -1,7 +1,10 @@
 package page;
 
 
-import org.openqa.selenium.JavascriptExecutor;  
+import static common.CommonActions.click;   
+import static common.CommonActions.input;
+
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,10 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import reporting.Logs;
 import utils.data.AutoData;
-import static common.CommonActions.*;
-
 public class AboutYou {
-	
 	WebDriver driver;
 	
 	public AboutYou(WebDriver driver) {
@@ -52,13 +52,13 @@ public class AboutYou {
 		click(popoUpElement);
 		Thread.sleep(2000);
 		((JavascriptExecutor)driver).executeScript("document.getElementById('continue').click();");
-		click(continueButtonElement);  
+		//click(continueButtonElement);  
 		Thread.sleep(5000);
 
 	}
 
 	
-	public void aboutYourProduct(AutoData autoData){ 
+	public void aboutYourProduct(AutoData autoData) throws InterruptedException{ 
 		//if(isPresent( homeownersQuoteeElement) && isDisplayed(homeownersQuoteeElement)) {
 		//click(homeownersQuoteeElement);
 
@@ -68,6 +68,7 @@ public class AboutYou {
 		input(aptUnitElement,autoData.getAptUnit()); 
 		input(dobElement,autoData.getDob()); 
 		click(continueButtonElement);  
+		Thread.sleep(5000);
 
 	}
 }

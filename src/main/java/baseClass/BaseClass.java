@@ -7,30 +7,31 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+//import org.testng.annotations.Parameters;
+import org.testng.annotations.Parameters;
 
-import AboutYouPage.AboutYourSelf;
+import RentersPage.AddressPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import page.AboutYou;
 import page.HomePage;
-import pageRenters.AddressPage;
 import utils.Configuration;
 import static utils.IConstant.*;
 import java.time.Duration;
 
 public class BaseClass {
-	
-	private static final int browser = 0;
+
+
 	Configuration config = new Configuration();
 	WebDriver driver;
 	protected HomePage homePage;
 	protected AboutYou aboutYou;
 	protected AddressPage addressPage;
-	protected AboutYourSelf aboutYourSelf ;
-	
 
+
+	@Parameters("browser")
 	@BeforeMethod
-	public void setUpDriver() {	
-		String browser = config.getProperty(BROWSER);
+	public void setUpDriver(String browser) {	
+		//String browser = config.getProperty(BROWSER);
 		initDriver(browser);
 		driver.manage().window().maximize();
 		driver.get(config.getProperty((URL))); 
@@ -75,8 +76,7 @@ public class BaseClass {
 		homePage = new HomePage(driver);
 		aboutYou = new AboutYou(driver);
 		addressPage = new AddressPage(driver);
-		aboutYourSelf = new AboutYourSelf (driver);
-		
+	
 	}
 
 	public WebDriver getDriver() {

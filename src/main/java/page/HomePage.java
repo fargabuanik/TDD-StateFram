@@ -1,6 +1,6 @@
 package page;
 
-import org.openqa.selenium.WebDriver;       
+import org.openqa.selenium.WebDriver;        
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,8 +33,8 @@ public class HomePage {
 		selectMethod(rentersElement, "Renters");
 		sleep(2);
 		click(startAquoteElement); 
-	}
-
+		
+	} 
 	public void autoProduct(String zipCode) {     
 		input(zipCodeElement, zipCode);
 		selectMethod(homeownersElement, "Homeowners");
@@ -46,7 +46,6 @@ public class HomePage {
 		input(zipCodeElement,autoData.getzipCode());
 		selectMethod(homeownersElement, "Homeowners");
 		click(startAquoteElement); 
-
 	}
 }
 

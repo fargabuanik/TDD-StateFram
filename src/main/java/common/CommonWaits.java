@@ -1,6 +1,6 @@
 package common;
 
-import java.time.Duration;  
+import java.time.Duration;   
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,6 +12,7 @@ import utils.IConstant;
 
 public class CommonWaits {
 
+	CommonWaits waits;
 	 WebDriverWait wait;
 	Configuration configuration = new  Configuration();
 
@@ -33,7 +34,7 @@ public class CommonWaits {
 		} catch (TimeoutException | NullPointerException e) {
 			e.printStackTrace();
 			Assert.fail();
-		}
+		
 	}
 }
-
+}

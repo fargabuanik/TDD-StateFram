@@ -1,6 +1,7 @@
-package pageRenters;
+package RentersPage;
 
 
+import org.openqa.selenium.JavascriptException; 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,9 +25,8 @@ public class AddressPage {
 	WebElement addressPageTitle;
 	@FindBy(xpath = "//textarea[@id='insured-address-full-address-id']")
 	WebElement addressElement;
-	@FindBy(className = "px38")
-	WebElement continueButtonElement;
-	
+//	@FindBy(className = "px38")
+//	WebElement continueButtonElement;
 	
 	
 	public void AddressPageProduct(String expected) {
@@ -35,7 +35,13 @@ public class AddressPage {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value='501 E 26st' ", addressElement);
 		waits.waitUntilClickable(addressElement);
-		click(continueButtonElement);
+		try {
+			((JavascriptExecutor)driver).executeScript("document.getElementById('continueButton').click();");
+		} catch (JavascriptException e) {
+		}
+		
+		
+		//click(continueButtonElement);
 		
 
 	}

@@ -1,6 +1,6 @@
 package auto;
 
-import org.testng.annotations.Test;
+import org.testng.annotations.Test; 
 
 import baseClass.BaseClass;
 import utils.data.AutoData;
@@ -17,7 +17,7 @@ public class AutoTest_with_AutoData extends BaseClass {
 	}
 	
 	@Test
-	public void AutoTestwithAutoDataNoParameter() {
+	public void AutoTestwithAutoDataNoParameter() throws InterruptedException {
 		homePage.autoProduct(autoData); 
 		aboutYou.aboutYourProduct(autoData);
 		
