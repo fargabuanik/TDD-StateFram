@@ -1,7 +1,7 @@
 package HomeTest;
 
  
-import org.testng.annotations.Test;  
+import org.testng.annotations.Test;   
 import baseClass.BaseClass;
 
 public class RentersQuoteTest extends BaseClass {

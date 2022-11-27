@@ -1,18 +1,18 @@
 package page;
 
 
-import static common.CommonActions.click;   
+import static common.CommonActions.click;         
 import static common.CommonActions.input;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import reporting.Logs;
 import utils.data.AutoData;
+
 public class AboutYou {
+
 	WebDriver driver;
 	
 	public AboutYou(WebDriver driver) {
@@ -46,11 +46,11 @@ public class AboutYou {
 		input(streetAddressElement, streetAddress); 
 		input(aptUnitElement, aptUnit); 
 		input(dobElement, dob); 
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 700)", "");
 		Logs.log("Scrolling down...");
 		click(popoUpElement);
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		((JavascriptExecutor)driver).executeScript("document.getElementById('continue').click();");
 		//click(continueButtonElement);  
 		Thread.sleep(5000);
@@ -58,7 +58,7 @@ public class AboutYou {
 	}
 
 	
-	public void aboutYourProduct(AutoData autoData) throws InterruptedException{ 
+	public void aboutYourProduct(AutoData autoData) { 
 		//if(isPresent( homeownersQuoteeElement) && isDisplayed(homeownersQuoteeElement)) {
 		//click(homeownersQuoteeElement);
 
@@ -68,7 +68,6 @@ public class AboutYou {
 		input(aptUnitElement,autoData.getAptUnit()); 
 		input(dobElement,autoData.getDob()); 
 		click(continueButtonElement);  
-		Thread.sleep(5000);
 
 	}
 }

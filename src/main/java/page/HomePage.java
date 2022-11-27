@@ -1,6 +1,6 @@
 package page;
 
-import org.openqa.selenium.WebDriver;        
+import org.openqa.selenium.WebDriver;       
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -19,6 +19,8 @@ public class HomePage {
 		waits = new CommonWaits(driver);
 		PageFactory.initElements(driver, this); 
 	}
+	@FindBy(id="quoteMODALTrigger")
+	WebElement startquoteElement; 
 	@FindBy(xpath ="//input[@id='quote-main-zip-code-input']")
 	WebElement zipCodeElement;  
 	@FindBy (xpath ="//select[@id='popDropdown']")
@@ -28,12 +30,19 @@ public class HomePage {
 	@FindBy(id ="quote-main-zip-btn")
 	WebElement startAquoteElement; 
 
-	public void rentersProduct(String zipCode) {
+	/*public void rentersProduct(String zipCode) {
+		if(isPresent(startquoteElement)&& isDisplayed(startquoteElement)) {
+			click(startquoteElement);
+		}
+		if(isPresent(zipCodeElement)&& isDisplayed(zipCodeElement)) {
+			input(zipCodeElement, zipCode);*/ 
+	
+		public void rentersProduct(String zipCode) {
 		input(zipCodeElement, zipCode);
 		selectMethod(rentersElement, "Renters");
 		sleep(2);
 		click(startAquoteElement); 
-		
+
 	} 
 	public void autoProduct(String zipCode) {     
 		input(zipCodeElement, zipCode);

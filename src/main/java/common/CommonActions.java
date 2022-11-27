@@ -1,6 +1,6 @@
 package common;
 
-import static org.testng.Assert.*;     
+import static org.testng.Assert.*;      
 import java.util.List;
 import java.util.NoSuchElementException;
 import org.openqa.selenium.By;

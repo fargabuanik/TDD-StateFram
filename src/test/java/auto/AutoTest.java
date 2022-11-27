@@ -1,6 +1,6 @@
 package auto;
 
-import org.testng.annotations.Parameters;     
+import org.testng.annotations.Parameters;       
 import org.testng.annotations.Test;
 import baseClass.BaseClass; 
 
@@ -9,7 +9,7 @@ public class AutoTest extends BaseClass{
 	@Test
 	public void autoQuote() throws InterruptedException{
 		homePage.autoProduct("11210"); 
-		aboutYou.aboutYourProduct("zahid", "nahid","501 E 26st","2nd","03-01-1977");
+		aboutYou.aboutYourProduct("zahid","nahid","501 E 26st","2nd","03/01/1977");
 	}
 	
 	@Parameters({"zipCode","firstName","lastName", "streetAddress","aptUnit" ,"dob"})
