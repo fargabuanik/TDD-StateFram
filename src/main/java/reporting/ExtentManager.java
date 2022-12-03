@@ -24,7 +24,7 @@ private static ExtentReports extent;
 				
 				extent = new ExtentReports();
 				ExtentSparkReporter sparkReporter = new ExtentSparkReporter("./test-output/ExtentReports/ExtentReport_"+dateString+".html");
-				sparkReporter.config().setReportName("QA Automation for Geico");
+				sparkReporter.config().setReportName("QA Automation for StateFrame");
 				extent.attachReporter(sparkReporter);
 				extent.setSystemInfo("QA Team", "Avengers_July2022");
 				extent.setSystemInfo("Environment", "QA");
